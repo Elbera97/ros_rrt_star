@@ -1,0 +1,14 @@
+<launch>
+
+   <node pkg="tf" type="static_transform_publisher" name="map_broadcaster" args="0 0 0 0 0 0 1 map base_link 100" />
+
+   <node pkg="ros_rrt_star" type="rrt_star_test" name="rrt_star_test" output="screen">
+      <param name="length" type="double" value="100"/>
+      <param name="width" type="double" value="100"/>
+      <param name="rrtstar_cost" type="double" value="0"/>        <!-- if rrtstar_cost = 0 RRT* seeks for optimal solution until termination_time--> 
+      <param name="termination_time" type="double" value="5"/>   <!-- if rrtstar_cost > 0 RRT* may stop before termination_time if a solution satisfying rrtstar_cost is found-->
+   </node>
+   
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_rrt_star)/rviz/rrt_vizualization.rviz" />
+
+</launch> 
