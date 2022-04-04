@@ -106,12 +106,12 @@ add_service_files(
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-  INCLUDE_DIRS include
+#catkin_package(
+#  INCLUDE_DIRS include
 #  LIBRARIES ros_rrt_star
 #  CATKIN_DEPENDS roscpp std_msgs
 #  DEPENDS system_lib
-)
+#)
 
 ###########
 ## Build ##
