@@ -14,7 +14,7 @@
 #include "nav_msgs/Path.h"
 #include "geometry_msgs/Pose.h"
 #include "geometry_msgs/PoseStamped.h"
-#include "ros_rrt_star/rrt_star_planning.h"
+#include "ompl_rrt_star_ros/rrt_star_planning.h"
 #include <visualization_msgs/Marker.h>
 #include <tf2/LinearMath/Quaternion.h>
 
