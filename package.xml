@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ros_rrt_star</name>
+  <name>ompl_rrt_star_ros</name>
   <version>0.0.0</version>
   <description>The ros_rrt_star package</description>
 
