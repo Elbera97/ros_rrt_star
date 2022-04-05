@@ -17,8 +17,8 @@ This is an OMPL RRT* algorithm ROS node implementation
 In `launch/rrt_star.launch` file there are some parameters you can play with:
 - "length" : length of the map in meters (y direction)
 - "width" : width of the map in meters (x direction)
-- "rrtstar_cost" : if rrtstar_cost = 0 RRT* seeks for optimal solution until termination_time
-- "termination_time" : if rrtstar_cost > 0 RRT* may stop before termination_time if a solution satisfying rrtstar_cost is found
+- "rrtstar_cost" : if rrtstar_cost = 0, RRT* seeks for optimal solution until termination_time
+- "termination_time" : if rrtstar_cost > 0, RRT* may stop before termination_time if a solution satisfying rrtstar_cost is found
 
 # Launch
 1. Run `roslaunch ros_rrt_star rrt_star.launch`
