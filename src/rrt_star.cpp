@@ -500,7 +500,7 @@ int main(int argc, char **argv)
 {    
     ros::init(argc, argv, "rrt_star_node");
     ros::NodeHandle node;
-	ros::NodeHandle nodeParam("~");
+    ros::NodeHandle nodeParam("~");
 
     double length,width,rrtstar_cost,termination_time;
     nodeParam.getParam("length", length);
@@ -521,8 +521,8 @@ int main(int argc, char **argv)
 
     ros::ServiceServer service = node.advertiseService("rrt_star_planning",&rrt_star::run_planning,&rrt_starOPJ);
 
-	ros::Rate loop_rate(10);
-	ros::Publisher marker_pub = node.advertise<visualization_msgs::Marker>("visualization_marker", 0.1);
+    ros::Rate loop_rate(10);
+    ros::Publisher marker_pub = node.advertise<visualization_msgs::Marker>("visualization_marker", 0.1);
     ros::Publisher path_pub = node.advertise<nav_msgs::Path>("nav_msgs/Path", 0.1);
 
     std::vector<visualization_msgs::Marker> Markers;
