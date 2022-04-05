@@ -5,7 +5,7 @@
  * Email: alouzi@itu.edu.tr
  *        elbera97@hotmail.com
  * 
- * Github: https://github.com/Elbera97
+ * Github: https://github.com/Elbera97/ros_rrt_star
  * 
  * Description: This is an OMPL RRT* algorithm ROS node implementation 
  *********************************************************************/
